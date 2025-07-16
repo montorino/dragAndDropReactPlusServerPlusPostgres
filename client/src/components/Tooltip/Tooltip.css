@@ -1,0 +1,33 @@
+.tooltip {
+  width: max-content;
+  background-color: #1d63a5;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 10px;
+  gap: 20px;
+  position: relative;
+  font-size: 25px;
+  color: #fff;
+}
+.btn {
+  font-size: 20px;
+  background-color: #21b1b1;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #1d63a5;
+  position: absolute;
+  bottom: -12px;
+  left: calc(50% - 12px);
+}
+
+.tooltip-container {
+  position: absolute;
+  transform: translateY(-200%);
+  display: none;
+}
